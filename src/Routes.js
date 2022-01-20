@@ -11,7 +11,6 @@ import DogDetails from './DogDetails';
  */
 const Routes = ({ dogs }) => {
   return (
-    <BrowserRouter>
       <Switch>
         <Route exact path="/dogs">
           <DogList dogs={dogs} />
@@ -21,7 +20,6 @@ const Routes = ({ dogs }) => {
         </Route>
         <Redirect to="/dogs" />
       </Switch>
-    </BrowserRouter>
   );
 }
 

@@ -1,5 +1,6 @@
 import './App.css';
 import Routes from './Routes';
+import Nav from './Nav';
 
 /** dog images are in public/images/ 
  * the img srcs are set here, and used in the dogs array
@@ -13,6 +14,7 @@ const tubby = "/images/tubby.jpg";
 function App({ dogs }) {
   return (
     <div className="App">
+      <Nav dogs={dogs} />
       <Routes dogs={dogs} />
     </div>
   );
