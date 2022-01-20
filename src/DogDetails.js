@@ -22,7 +22,7 @@ const DogDetails = ({ dogs }) => {
       </ul>
       <Link to="/dogs">Back to dogs</Link>
     </div>
-  )
+  );
 }
 
 export default DogDetails;

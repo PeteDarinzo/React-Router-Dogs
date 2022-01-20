@@ -1,24 +1,15 @@
 import './App.css';
-// import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
-// import DogList from './DogList';
-// import DogDetails from './DogDetails';
 import Routes from './Routes';
 
 /** dog images are in public/images/ 
- * the srcs are set here, and used in the dogs array
+ * the img srcs are set here, and used in the dogs array
 */
 const whiskey = "/images/whiskey.jpg";
 const duke = "/images/duke.jpg";
 const perry = "/images/perry.jpg";
 const tubby = "/images/tubby.jpg";
 
-/**
- * inside a browser router, make a switch containing two routes
- * the DogList route renders a list of all dogs
- * DogDetails shows one dog, the dog is take from the "name" parameter
- * if neither route is hit, redirect to the DogList
- * 
- */
+
 function App({ dogs }) {
   return (
     <div className="App">
